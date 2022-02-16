@@ -1,0 +1,20 @@
+<style>
+    h1 {
+        color: blue;
+    }
+</style>
+
+<h1>Hello</h1>
+<span>World</span>
+
+<button id="count">0</button>
+
+<script>
+    var button = document.getElementById('count');
+    button.addEventListener(
+        'click',
+        function () {
+            button.innerText = Number(button.innerText) + 1;
+        }
+    )
+</script>
